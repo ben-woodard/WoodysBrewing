@@ -1,3 +1,3 @@
 # WoodysBrewing
 
-Brewery website exercise, focusing on use of CSS Flexbox
+Brewery website exercise, focusing on use of CSS Flexbox.
