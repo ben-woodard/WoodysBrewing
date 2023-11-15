@@ -1,0 +1,275 @@
+
+html{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+}
+body{
+    background-color: black;
+    margin-top: 0;
+    padding-top: 0;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:rgba(255, 36, 0, .8);
+}
+a:visited{
+    color: pink;
+}
+/* Navbar Header */
+
+.navlogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid white;
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+
+}
+#logo{
+    padding: .5rem 2rem;
+    align-items: center;
+    
+}
+nav li{
+    color: white;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bannerimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Resources/Images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 0 auto;
+    max-width: 80%;
+    height: 35rem; 
+}
+.bheader{
+    background-color: rgba(255, 36, 0, .8);
+    width: 100%;
+}
+.bannerimage h1{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: .5rem;
+    letter-spacing: .15rem;
+    font-family: 'Raleway', sans-serif !important;
+}
+.bannerimage h2{
+  color: white;
+  text-align: center;
+  opacity: 1 !important;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: .1rem;
+}
+
+@media only screen and (max-width: 800px){
+    
+
+}
+
+@media only screen and (max-width: 720px){
+    
+    .bannerimage h2
+    {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    #logo{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .econtainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* Mission */
+
+
+.mbanner{
+    width: 80%;
+    height: auto;
+    background-color: rgba(255, 36, 0);
+    border: 1px solid rgba(255, 36, 0) ;
+    border-radius: 2%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    margin: .5rem auto;
+}
+#sechead{
+    text-align: center;
+    border: 1px solid rgba(255, 36, 0);
+    border-radius: 2%;
+    max-width: 30%;
+    margin: 5rem auto .5rem;
+}
+.imgcontainer{
+    display: inline-flex;
+    width: 30%;
+    height: auto;
+    max-width: 100%;  
+    padding-top: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.mbanner img{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border: .25rem solid black;
+    padding: .25rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+
+.mbanner p{
+    max-width: 80%;
+    line-height: 1.5;
+    margin: 1.5rem auto;
+}
+
+/* Team Section */
+
+.tcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 0 auto; 
+}   
+.box{
+    max-width: 75%;
+    height: fit-content;
+    background-color: rgba(255, 36, 0);
+    border: 1px solid rgba(255, 36, 0) ;
+    border-radius: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+.box img{
+    max-width: 50%;
+    height: auto; 
+    display: block;
+    margin: 2rem auto 0;
+    border: .25rem solid black;
+    padding: .25rem;
+}
+.box p{
+    padding: 0 2.5rem;
+    letter-spacing: 1.2;
+    margin-top: 0;
+}
+
+/* events */
+
+
+.econtainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.econtent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 36, 0);
+    border: 1px solid rgba(255, 36, 0) ;
+    border-radius: 2%;
+    max-width: 30%;
+    height: auto;
+}
+
+.econtent img{
+    display: flex;
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+    border: .25rem solid black;
+    padding: .25rem;
+}
+
+#ebottom{
+    margin-top: 1.5rem;
+}
+ #etall{
+    height: 12.3125rem;
+    width: 18rem;
+    object-fit: contain;
+}
+
+/*Locations */
+
+.limage{
+    background-image: url("./Resources/Images/beergarden2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 90%;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.limage h1{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: .5rem;
+    letter-spacing: .15rem;
+}
+.limage h2{
+  color: white;
+  text-align: center;
+  opacity: 1 !important;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: .1rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    border-top: 1px solid rgba(255, 36, 0);
+}
